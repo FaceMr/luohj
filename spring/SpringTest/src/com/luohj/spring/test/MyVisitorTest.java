@@ -1,0 +1,19 @@
+package com.luohj.spring.test;
+
+import org.junit.Test;
+
+import com.luohj.spring.designer.visitor.MySubject;
+import com.luohj.spring.designer.visitor.MyVisitor;
+import com.luohj.spring.designer.visitor.Subject;
+import com.luohj.spring.designer.visitor.Visitor;
+
+public class MyVisitorTest {
+
+	@Test
+	public void test() {
+		Visitor visitor = new MyVisitor();
+		Subject sub = new MySubject();
+		sub.accept(visitor);	
+	}
+
+}
