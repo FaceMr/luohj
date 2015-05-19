@@ -1,0 +1,5 @@
+package com.luohj.spring.classloader;
+
+public class MyClassLoader {
+
+}

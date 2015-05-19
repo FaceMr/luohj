@@ -1,0 +1,10 @@
+package com.luohj.spring.designer.template;
+
+public abstract class AbstractCaculator {
+	public final int caculete(String exp,String opt){
+		int array[] = split(exp,opt);   
+		return calculate(array[0],array[1]);  
+	}
+	
+	abstract public caculete(int a, int b);
+}

@@ -1,0 +1,6 @@
+package com.luohj.spring.annotation;
+
+public @interface Annotation {
+	public String name() default "";
+	public String requried = "" ;
+}

@@ -1,0 +1,6 @@
+package com.luohj.spring.dao;
+
+public interface PersonDao {
+	public void save();
+    public void useAxe();
+}

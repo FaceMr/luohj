@@ -1,0 +1,24 @@
+package com.luohj.spring.designer.observer;
+
+import java.util.Date;
+
+public abstract class NoticeFlag implements Observer {
+	public NoticeFlag(){
+		setSeq(new Date().getTime()+Math.random()*100);
+	}
+	private boolean flag = false ;
+	private long seq = 0l;
+
+	public long getSeq() {
+		return seq;
+	}
+	public void setSeq(long seq) {
+		this.seq = seq;
+	}
+	public boolean getFlag() {
+		return flag;
+	}
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+}

@@ -1,0 +1,20 @@
+package com.luohj.spring.test;
+
+import org.junit.Test;
+
+import com.luohj.spring.designer.bridge.Driver;
+import com.luohj.spring.designer.bridge.DriverManagerEx;
+import com.luohj.spring.designer.bridge.MysqlDriver;
+import com.luohj.spring.designer.bridge.OracleDriver;
+
+public class DriverManagerExTest {
+
+	@Test
+	public void testConnect() {
+		//fail("Not yet implemented");
+		Driver dvOracle = new OracleDriver();
+		DriverManagerEx dvMgr = new DriverManagerEx();
+		Driver dvMysql = new MysqlDriver();
+	}
+
+}

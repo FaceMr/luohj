@@ -1,0 +1,8 @@
+package com.luohj.spring.dao.impl;
+
+import com.luohj.spring.dao.PersonDao;
+
+public class Chinese implements PersonDao {
+
+
+}

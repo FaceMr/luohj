@@ -1,0 +1,35 @@
+package com.luohj.spring.designer.bridge;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class OracleDriver implements Driver  {
+	private Object clazz ;
+	
+	/**
+	 * 构造函数--代理模式是封装了业务类，client并不了解具体业务是由什么类执行的
+	 * 
+	 * */
+	public OracleDriver(){
+		super();
+		this.clazz = new MysqlDriver();
+		System.out.println("代理模式！");
+	}
+	
+	@Override
+	public void doBusiness() {
+		// TODO Auto-generated method stub
+		long start = printDate("Start time");
+		((Driver)clazz).doBusiness();
+		long end = printDate("End time");
+		System.out.println("时间差："+(end-start)+"ms");
+	}
+	
+	private long printDate(String str){
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		Date now = new Date();
+		System.out.println(str+":" + format.format(now));
+		return now.getTime();
+	}
+
+}

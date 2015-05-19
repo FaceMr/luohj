@@ -1,0 +1,15 @@
+package com.luohj.spring.test;
+
+import org.junit.Test;
+
+import com.luohj.spring.designer.decorator.CaculateDoBusiTime;
+
+public class CaculateDoBusiTimeTest {
+
+	@Test
+	public void testDoBusiness() {
+		//fail("Not yet implemented");
+		CaculateDoBusiTime test = new CaculateDoBusiTime();
+	}
+
+}

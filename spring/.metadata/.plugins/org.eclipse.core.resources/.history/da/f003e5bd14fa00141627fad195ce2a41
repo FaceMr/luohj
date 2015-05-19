@@ -1,0 +1,5 @@
+package com.luohj.spring.designer.strategy;
+
+public class AbstractCalculator {
+
+}

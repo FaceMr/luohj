@@ -1,0 +1,16 @@
+package com.luohj.spring.designer.mediator;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MyMediatorTest {
+
+	@Test
+	public void test() {
+		Mediator mediator = new MyMediator();
+		mediator.createMediator();
+		mediator.workAll();
+	}
+
+}

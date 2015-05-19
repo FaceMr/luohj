@@ -1,0 +1,8 @@
+package com.luohj.spring.designer.bridge;
+
+public class DriverManagerEx extends DriverManager {
+	@Override
+	public void connect(){
+		getDriver().connect();
+	}
+}

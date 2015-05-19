@@ -1,0 +1,9 @@
+package com.luohj.spring.designer.bridge;
+
+public abstract class DriverManager {
+	private Driver driver ;
+	
+	public void connect(){
+		driver.connect();
+	}
+}

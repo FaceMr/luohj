@@ -1,0 +1,11 @@
+package com.luohj.spring.designer.command;
+
+/**
+ * 命令接口
+ * 
+ * @author luohj
+ *
+ */
+public interface Command {
+	public void exe();  
+}

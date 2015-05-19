@@ -1,0 +1,10 @@
+package com.luohj.spring.designer.interpreter;
+
+/**
+ * 解释器接口
+ * @author luohj
+ *
+ */
+public interface Expression {
+	 public int interpret(Context context);  
+}

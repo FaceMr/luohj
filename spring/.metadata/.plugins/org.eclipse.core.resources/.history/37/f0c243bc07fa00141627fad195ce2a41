@@ -1,0 +1,30 @@
+package com.luohj.spring.designer.decorator;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class CaculateDoBusiTime implements BaseBusiness  {
+	private Object clazz ;
+	
+	public CaculateDoBusiTime(Object clazz){
+		super();
+		this.clazz = clazz ;
+	}
+	
+	@Override
+	public void doBusiness() {
+		// TODO Auto-generated method stub
+		long start = printDate("Start time");
+		((BaseBusiness)clazz).doBusiness();
+		long end = printDate("End time");
+		System.out.print("时间差："+(start-end));
+	}
+	
+	private long printDate(String str){
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		Date now = new Date();
+		System.out.print(str+":" + format.format(now));
+		return now.getTime();
+	}
+
+}

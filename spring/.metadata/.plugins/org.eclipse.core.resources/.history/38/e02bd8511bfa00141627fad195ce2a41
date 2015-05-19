@@ -1,0 +1,13 @@
+package com.luohj.spring.designer.observer;
+
+public class NoticeFlag {
+	private boolean flag = false ;
+	private long seq = 0l;
+
+	public boolean isFlag() {
+		return flag;
+	}
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+}

@@ -1,0 +1,5 @@
+package com.luohj.spring.aop.service.impl;
+
+public class HelloImpl implements IHello {
+
+}

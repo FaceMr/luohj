@@ -1,0 +1,23 @@
+package com.luohj.spring.designer.iterator;
+
+public class MyCollection implements Collection {
+
+	@Override
+	public Iterator iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object get(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

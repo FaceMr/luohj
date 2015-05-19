@@ -1,0 +1,13 @@
+package com.luohj.spring.designer.observer;
+
+public class Observer2 extends NoticeFlag {
+	
+	@Override
+	public void update() {
+		if(!getFlag()){
+			System.out.println("observer2 has received!");
+			setFlag(true);
+		}
+	}
+
+}

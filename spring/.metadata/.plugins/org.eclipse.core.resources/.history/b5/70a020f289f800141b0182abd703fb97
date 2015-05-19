@@ -1,0 +1,7 @@
+package com.luohj.spring.annotation;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Annotation {
+	public String name() default "";
+	public String requried() default "" ;
+}

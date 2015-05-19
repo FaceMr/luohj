@@ -1,0 +1,16 @@
+package com.luohj.spring.designer.observer;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MySubjectTest {
+
+	@Test
+	public void test() {
+		//fail("Not yet implemented");
+		Subject sub = new MySubject();  
+		sub.add(new Observer1());  
+	}
+
+}

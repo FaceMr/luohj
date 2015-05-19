@@ -1,0 +1,20 @@
+package com.luohj.spring.dao.impl;
+
+import com.luohj.spring.dao.PersonDao;
+
+public class Chinese implements PersonDao {
+
+	@Override
+	public void save() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void useAxe() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

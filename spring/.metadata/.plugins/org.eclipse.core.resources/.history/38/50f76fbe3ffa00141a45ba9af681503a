@@ -1,0 +1,14 @@
+package com.luohj.spring.designer.chainResponsibility;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MyHandlerTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

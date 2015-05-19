@@ -1,0 +1,6 @@
+package com.luohj.spring.aop.service;
+
+public interface IHello {
+	void sayHello();
+	void sayBye();
+}

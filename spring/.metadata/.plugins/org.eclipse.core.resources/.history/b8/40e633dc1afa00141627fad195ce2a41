@@ -1,0 +1,11 @@
+package com.luohj.spring.designer.observer;
+
+public class Observer1 implements Observer {
+	private boolean flag = false ;
+	@Override
+	public void update() {
+		if(!flag)
+			System.out.println("observer1 has received!");  		
+	}
+
+}

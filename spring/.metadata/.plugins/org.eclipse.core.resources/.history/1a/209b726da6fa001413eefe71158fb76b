@@ -1,0 +1,8 @@
+package com.luohj.spring.aop.proxy;
+
+import java.lang.reflect.InvocationHandler;
+
+public class LoggerProxy implements InvocationHandler {
+
+
+}

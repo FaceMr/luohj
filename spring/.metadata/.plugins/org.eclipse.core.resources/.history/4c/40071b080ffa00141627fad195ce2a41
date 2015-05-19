@@ -1,0 +1,13 @@
+package com.luohj.spring.designer.bridge;
+
+public class DriverManagerEx extends DriverManager {
+	@Override
+	public void connect(){
+		Driver dv = getDriver();
+		if(dv==null){
+			System.err.println("驱动为空！");
+		}else{
+			dv.connect();
+		}
+	}
+}

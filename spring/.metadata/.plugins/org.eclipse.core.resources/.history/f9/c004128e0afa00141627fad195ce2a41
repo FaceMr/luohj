@@ -1,0 +1,18 @@
+package com.luohj.spring.test;
+
+import org.junit.Test;
+
+import com.luohj.spring.designer.decorator.CaculateDoBusiTime;
+import com.luohj.spring.designer.decorator.PrintBusiness;
+
+public class CaculateDoBusiTimeTest {
+
+	@Test
+	public void testDoBusiness() {
+		//fail("Not yet implemented");
+		PrintBusiness pr = new PrintBusiness();
+		CaculateDoBusiTime test = new CaculateDoBusiTime(pr);
+		test.doBusiness();
+	}
+
+}

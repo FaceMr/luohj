@@ -1,0 +1,10 @@
+package com.luohj.spring.designer.bridge;
+
+public class PrintBusiness implements Driver {
+
+	@Override
+	public void doBusiness() {
+		System.out.println("打印业务！");
+	}
+
+}

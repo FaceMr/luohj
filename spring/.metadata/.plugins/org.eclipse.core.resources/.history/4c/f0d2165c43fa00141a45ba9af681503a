@@ -1,0 +1,21 @@
+package com.luohj.spring.designer.command;
+
+import org.junit.Test;
+
+import com.luohj.spring.designer.command.Command;
+import com.luohj.spring.designer.command.Invoker;
+import com.luohj.spring.designer.command.MyCommand;
+import com.luohj.spring.designer.command.Receiver;
+
+public class MyCommandTest {
+
+	@Test
+	public void test() {
+		//fail("Not yet implemented");
+		Receiver receiver = new Receiver();  
+		Command cmd = new MyCommand(receiver);  
+		Invoker invoker = new Invoker(cmd);  
+		invoker.action();  
+	}
+
+}

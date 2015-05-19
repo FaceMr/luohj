@@ -1,0 +1,5 @@
+package com.luohj.spring.designer.bridge;
+
+public abstract class DriverManager {
+	private Driver driver ;
+}

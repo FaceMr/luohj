@@ -1,0 +1,23 @@
+package com.luohj.spring.test;
+
+
+import org.junit.Test;
+
+public class HelloImplTest {
+
+	@Test
+	public void testSayHello() {
+//		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSayBye() {
+//		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testHelloWorld() {
+//		fail("Not yet implemented");
+	}
+
+}

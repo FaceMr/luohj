@@ -1,0 +1,5 @@
+package com.luohj.spring.designer.mediator;
+
+public interface User {
+
+}

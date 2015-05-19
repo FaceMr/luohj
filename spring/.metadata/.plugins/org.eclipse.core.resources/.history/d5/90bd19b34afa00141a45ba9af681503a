@@ -1,0 +1,13 @@
+package com.luohj.spring.designer.interpreter;
+
+
+import org.junit.Test;
+
+public class ExpressionTest {
+
+	@Test
+	public void test() {
+		//fail("Not yet implemented");
+	}
+
+}

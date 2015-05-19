@@ -1,0 +1,11 @@
+package com.luohj.spring.test;
+
+public class Test {
+	public static void main(String[] args) {
+		ApplicationContext ac = new ApplicationContext("applicationContext.xml");
+		Person person = (Person)ac.getBean("chinese");
+		person.save();
+		person.useAxe();
+	}
+
+}

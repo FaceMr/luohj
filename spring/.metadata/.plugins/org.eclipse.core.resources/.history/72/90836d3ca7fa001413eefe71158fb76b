@@ -1,0 +1,40 @@
+package com.luohj.spring.aop.proxy;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class LoggerProxy implements InvocationHandler {
+	private Object delegate ;
+	private Logger logger = Logger.getLogger(LoggerProxy.class.getName());
+
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args)
+			throws Throwable {
+		Object result = null;
+		try {
+			//执行原来的方法之前记录日志
+			logger.log(Level.INFO, method.getName() + " Method end .");
+			//JVM通过这条语句执行原来的方法(反射机制)
+			result = method.invoke(this.delegate, args);
+			//执行原来的方法之后记录日志
+			logger.log(Level.INFO, method.getName() + " Method Start!");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		//返回方法返回值给调用者
+		return result;
+	}
+	
+	public Object bind(Object delegate) {
+		this.delegate = delegate;
+		return Proxy.newProxyInstance(
+				this.delegate.getClass().getClassLoader(), this.delegate
+						.getClass().getInterfaces(), this);
+
+	}
+
+}

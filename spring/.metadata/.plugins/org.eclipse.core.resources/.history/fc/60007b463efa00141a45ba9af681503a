@@ -1,0 +1,45 @@
+package com.luohj.spring.designer.iterator;
+
+public class MyCollection implements Collection {
+	public Object object[] ;
+	
+	public MyCollection (String[] obj) {
+		if(obj!=null){
+			String [] a =  obj ;
+			object = a;
+		}else{
+			String [] a =  {"A","B","C","D","E"};
+			object = a;
+		}
+	}
+	
+	public MyCollection (Integer[] obj) {
+		if(obj!=null){
+			Integer [] a =  obj ;
+			object = a;
+		}else{
+			Integer [] a =  {1,2,3,4,5};
+			object = a;
+		}
+	}
+	
+	public MyCollection () {
+		String [] a =  {"A","B","C","D","E"};
+		object = a;
+	}
+	
+	@Override
+	public Iterator iterator() {
+		return new MyIterator(this);
+	}
+
+	@Override
+	public Object get(int i) {
+		return object[i];
+	}
+
+	@Override
+	public int size() {
+		return object.length;
+	}
+}

@@ -1,0 +1,32 @@
+package com.luohj.spring.test;
+
+import org.junit.Test;
+
+import com.luohj.spring.aop.proxy.LoggerProxy;
+import com.luohj.spring.aop.service.IHello;
+import com.luohj.spring.aop.service.impl.HelloImpl;
+
+public class HelloImplTest {
+	static IHello hello = null;
+	@Test
+	public void testSayHello() {
+//		fail("Not yet implemented");
+		if(hello==null){
+			getProxyHello();
+		}
+	}
+
+	@Test
+	public void testSayBye() {
+//		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testHelloWorld() {
+//		fail("Not yet implemented");
+	}
+	
+	private void getProxyHello(){
+		this.hello = (IHello)new LoggerProxy().bind(new HelloImpl());
+	}
+}

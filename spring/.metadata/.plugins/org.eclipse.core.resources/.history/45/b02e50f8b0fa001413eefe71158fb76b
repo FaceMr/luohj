@@ -1,0 +1,15 @@
+package com.luohj.spring.classloader;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SystemPropertiesTest {
+
+	@Test
+	public void testPrint() {
+		//fail("Not yet implemented");
+		new SystemProperties().print();
+	}
+
+}

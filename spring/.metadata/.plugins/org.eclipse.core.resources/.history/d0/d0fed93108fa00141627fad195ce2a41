@@ -1,0 +1,9 @@
+package com.luohj.spring.designer.decorator;
+
+/**
+ * @author luohj
+ *
+ */
+public interface BaseBusiness {
+	void doBusiness();
+}

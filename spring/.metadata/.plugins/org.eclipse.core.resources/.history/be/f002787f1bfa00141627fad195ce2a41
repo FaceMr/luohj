@@ -1,0 +1,19 @@
+package com.luohj.spring.designer.observer;
+
+public abstract class NoticeFlag implements Observer {
+	private boolean flag = false ;
+	private long seq = 0l;
+
+	public long getSeq() {
+		return seq;
+	}
+	public void setSeq(long seq) {
+		this.seq = seq;
+	}
+	public boolean getFlag() {
+		return flag;
+	}
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+}

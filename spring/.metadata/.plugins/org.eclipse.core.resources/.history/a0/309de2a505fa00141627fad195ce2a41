@@ -1,0 +1,7 @@
+package com.luohj.spring.designer.decorator;
+
+public interface BaseBusiness {
+	void doBusiness(){
+		
+	}
+}

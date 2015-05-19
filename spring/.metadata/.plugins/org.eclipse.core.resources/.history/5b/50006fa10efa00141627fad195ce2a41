@@ -1,0 +1,16 @@
+package com.luohj.spring.test;
+
+import org.junit.Test;
+
+import com.luohj.spring.designer.bridge.Driver;
+import com.luohj.spring.designer.bridge.OracleDriver;
+
+public class DriverManagerExTest {
+
+	@Test
+	public void testConnect() {
+		//fail("Not yet implemented");
+		Driver dv = new OracleDriver();
+	}
+
+}

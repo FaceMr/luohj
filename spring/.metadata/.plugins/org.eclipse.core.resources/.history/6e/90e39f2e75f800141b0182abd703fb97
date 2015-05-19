@@ -1,0 +1,5 @@
+package com.luohj.spring.dao;
+
+public interface Axe {
+
+}

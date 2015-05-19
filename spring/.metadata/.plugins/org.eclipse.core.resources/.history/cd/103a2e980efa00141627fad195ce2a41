@@ -1,0 +1,15 @@
+package com.luohj.spring.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DriverManagerExTest {
+
+	@Test
+	public void testConnect() {
+		//fail("Not yet implemented");
+		succ("");
+	}
+
+}

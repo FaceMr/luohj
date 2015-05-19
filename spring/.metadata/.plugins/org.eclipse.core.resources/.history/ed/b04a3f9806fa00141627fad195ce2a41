@@ -1,0 +1,27 @@
+package com.luohj.spring.designer.decorator;
+
+import java.util.Date;
+
+public class CaculateDoBusiTime implements BaseBusiness  {
+	private Object clazz ;
+	
+	public CaculateDoBusiTime(Object clazz){
+		super();
+		this.clazz = clazz ;
+	}
+	
+	@Override
+	public void doBusiness() {
+		// TODO Auto-generated method stub
+		long start = printDate("Start time");
+		((BaseBusiness)clazz).doBusiness();
+		long end = printDate("End time");
+	}
+	
+	private long printDate(String str){
+		Date now = new Date();
+		System.out.print(str+":"+now.getDate())
+		return now.getTime();
+	}
+
+}

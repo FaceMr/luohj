@@ -1,0 +1,5 @@
+package com.luohj.spring.designer.chainResponsibility;
+
+public abstract class AbstractHandler {
+
+}

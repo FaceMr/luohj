@@ -1,0 +1,19 @@
+package com.luohj.spring.test;
+
+import org.junit.Test;
+
+import com.luohj.spring.designer.template.AbstractCalculator;
+import com.luohj.spring.designer.template.Plus;
+
+public class AbstractCalculatorTest {
+
+	@Test
+	public void test() {
+		//fail("Not yet implemented");
+		AbstractCalculator test = new Plus();
+		String exp = "8+8";  
+		int result = test.calculate(exp, "\\+");  
+		System.out.println(result);  
+	}
+
+}

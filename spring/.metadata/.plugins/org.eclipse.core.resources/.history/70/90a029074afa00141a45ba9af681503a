@@ -1,0 +1,17 @@
+package com.luohj.spring.designer.mediator;
+
+import org.junit.Test;
+
+import com.luohj.spring.designer.mediator.Mediator;
+import com.luohj.spring.designer.mediator.MyMediator;
+
+public class MyMediatorTest {
+
+	@Test
+	public void test() {
+		Mediator mediator = new MyMediator();
+		mediator.createMediator();
+		mediator.workAll();
+	}
+
+}

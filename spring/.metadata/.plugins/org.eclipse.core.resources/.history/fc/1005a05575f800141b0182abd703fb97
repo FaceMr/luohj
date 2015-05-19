@@ -1,0 +1,6 @@
+package com.luohj.spring.dao.impl;
+
+public class Chinese implements Person {
+
+
+}

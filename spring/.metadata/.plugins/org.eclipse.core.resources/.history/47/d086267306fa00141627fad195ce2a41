@@ -1,0 +1,19 @@
+package com.luohj.spring.designer.decorator;
+
+public class CaculateDoBusiTime implements BaseBusiness  {
+	private Object clazz ;
+	
+	public CaculateDoBusiTime(Object clazz){
+		super();
+		this.clazz = clazz ;
+	}
+	
+	@Override
+	public void doBusiness() {
+		// TODO Auto-generated method stub
+		((BaseBusiness)clazz).doBusiness();
+	}
+	
+	private 
+
+}

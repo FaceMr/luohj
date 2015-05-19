@@ -1,0 +1,9 @@
+package com.luohj.spring.service;
+
+/**
+ * @author luohj
+ *
+ */
+public class PersonService {
+
+}

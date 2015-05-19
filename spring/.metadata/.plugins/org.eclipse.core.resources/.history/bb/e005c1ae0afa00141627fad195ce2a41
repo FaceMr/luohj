@@ -1,0 +1,25 @@
+package com.luohj.spring.test;
+
+import org.junit.Test;
+
+import com.luohj.spring.designer.decorator.CaculateDoBusiTime;
+import com.luohj.spring.designer.decorator.PrintBusiness;
+import com.luohj.spring.designer.proxy.CaculateDoBusiTime;
+import com.luohj.spring.designer.proxy.PrintBusiness;
+
+public class CaculateDoBusiTimeTest {
+
+	@Test
+	public void testDoBusiness() {
+		//装饰模式测试
+		PrintBusiness pr = new PrintBusiness();
+		CaculateDoBusiTime test = new CaculateDoBusiTime(pr);
+		test.doBusiness();
+		
+		//代理模式测试
+		PrintBusiness pr = new PrintBusiness();
+		CaculateDoBusiTime test = new CaculateDoBusiTime();
+		test.doBusiness();
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.luohj.spring.test;
+
+import org.junit.Test;
+
+import com.luohj.spring.designer.iterator.Collection;
+import com.luohj.spring.designer.iterator.Iterator;
+import com.luohj.spring.designer.iterator.MyCollection;
+
+public class MyCollectionTest {
+
+	@Test
+	public void test() {
+		//fail("Not yet implemented");
+		Collection collection = new MyCollection(); 
+		Iterator it = collection.iterator();  
+		while(it.hasNext()){  
+			System.out.println(it.next());  
+		}
+	}
+
+}
